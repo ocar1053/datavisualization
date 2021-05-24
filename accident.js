@@ -9,7 +9,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}", {
 		'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 }).addTo(map);
 let markers = new L.MarkerClusterGroup();
-let = url = "data.json";
+let url = "data.json";
 let xhr = new XMLHttpRequest();
 xhr.open("GET", url);
 xhr.responseType = "json";
@@ -22,7 +22,7 @@ xhr.onload = function () {
 				"<h1> time:" +
 					data[i].time +
 					"</h1>" +
-					"<h1> class:" +
+					"<h1> 交通事故類別:" +
 					data[i].classs +
 					"</h1>" +
 					"<h1> site:" +
@@ -34,3 +34,5 @@ xhr.onload = function () {
 	}
 	map.addLayer(markers);
 };
+
+/* Set the width of the side navigation to 250px */
