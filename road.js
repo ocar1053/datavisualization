@@ -1,4 +1,3 @@
-//searchLayer is a L.LayerGroup contains searched markers
 let urll = "rank.json";
 let requst = new XMLHttpRequest();
 requst.open("GET", urll);
