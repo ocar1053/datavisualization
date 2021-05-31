@@ -1,14 +1,14 @@
 #map {
 	height: 100%;
 	width: 100%;
-	left: 20%;
+	right: 20%;
 	position: absolute;
 }
 
 #rank {
 	height: 100%;
 	width: 20%;
-	left: 0%;
+	right: 0%;
 	position: absolute;
 	background-color: aliceblue;
 }

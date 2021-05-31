@@ -8,6 +8,20 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}", {
 	attribution:
 		'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 }).addTo(map);
+var geocoder = L.Control.geocoder({
+	defaultMarkGeocode: false,
+})
+	.on("markgeocode", function (e) {
+		var bbox = e.geocode.bbox;
+		var poly = L.polygon([
+			bbox.getSouthEast(),
+			bbox.getNorthEast(),
+			bbox.getNorthWest(),
+			bbox.getSouthWest(),
+		]).addTo(map);
+		map.fitBounds(poly.getBounds());
+	})
+	.addTo(map);
 let markers = new L.MarkerClusterGroup();
 let url = "data.json";
 let xhr = new XMLHttpRequest();
