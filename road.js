@@ -1,19 +1,20 @@
-//searchLayer is a L.LayerGroup contains searched markers
 let urll = "rank.json";
 let requst = new XMLHttpRequest();
-requst.open("GET", urll);
+requst.open("GET", urll); //resquest local data
 requst.responseType = "json";
 requst.send(null);
 requst.onload = function () {
 	let datarespose = requst.response;
+
+	// to show top ten data in leftside
 	for (let k = 0; k < datarespose.length; k++) {
 		console.log(datarespose);
 		document.getElementById("rank").innerHTML +=
-			"<h2>" +
+			"<h3>" +
 			datarespose[k].rank +
 			". " +
 			"  " +
 			datarespose[k].site +
-			"</h2>";
+			"</h3>";
 	}
 };
