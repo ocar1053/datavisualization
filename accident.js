@@ -28,7 +28,7 @@ var geocoder = L.Control.geocoder({
 	})
 	.addTo(map);
 let markers = new L.MarkerClusterGroup(); // using MarkerCluster
-let url = "data.json";
+let url = "jsonFile/data.json";
 let xhr = new XMLHttpRequest();
 xhr.open("GET", url); // request local data
 xhr.responseType = "json";
