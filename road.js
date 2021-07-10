@@ -10,11 +10,11 @@ requst.onload = function () {
 	for (let k = 0; k < datarespose.length; k++) {
 		console.log(datarespose);
 		document.getElementById("rank").innerHTML +=
-			"<h3>" +
+			"<p>" +
 			datarespose[k].rank +
 			". " +
 			"  " +
 			datarespose[k].site +
-			"</h3>";
+			"</p>";
 	}
 };
