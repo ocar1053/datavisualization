@@ -39,13 +39,13 @@ xhr.onload = function () {
 		let marker = L.marker([data[i].Y, data[i].X])
 			// show something when click mark
 			.bindPopup(
-				"<h1> time:" +
+				"<h1> 時間紀錄:" +
 					data[i].time +
 					"</h1>" +
 					"<h1> 交通事故類別:" +
 					data[i].classs +
 					"</h1>" +
-					"<h1> site:" +
+					"<h1> 地點:" +
 					data[i].site +
 					"</h1>"
 			)

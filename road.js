@@ -8,13 +8,9 @@ requst.onload = function () {
 
 	// to show top ten data in leftside
 	for (let k = 0; k < datarespose.length; k++) {
-		console.log(datarespose);
-		document.getElementById("rank").innerHTML +=
-			"<p>" +
-			datarespose[k].rank +
-			". " +
-			"  " +
-			datarespose[k].site +
-			"</p>";
+		$("#listadd").append(
+			`<li class="ui-li-static ui-body-inherit" style="
+			text-align: center";>${datarespose[k].site}</li>`
+		);
 	}
 };
