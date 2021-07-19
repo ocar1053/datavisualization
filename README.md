@@ -53,7 +53,7 @@
 
 ## 功能展示
 
-![Product Name Screen Shot][searchs-screenshot]
+![Product Name Screen Shot][search-screenshot]
 
 提供搜索功能快速尋找指定路段
 
@@ -79,5 +79,5 @@
 Github Link: [https://github.com/ocar1053](https://github.com/ocar1053)
 
 [product-screenshot]: images/car.png
-[searchs-screenshot]: images/search.png
+[search-screenshot]: images/searchs.png
 [resource-screenshot]: images/resouce.png
