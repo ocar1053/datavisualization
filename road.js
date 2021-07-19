@@ -1,8 +1,8 @@
-let urll = "../jsonFile/rank.json";
+let urll = "jsonFile/rank.json";
 let requst = new XMLHttpRequest();
 requst.open("GET", urll); //resquest local data
 requst.responseType = "json";
-requst.send();
+requst.send(null);
 requst.onload = function () {
 	let datarespose = requst.response;
 
