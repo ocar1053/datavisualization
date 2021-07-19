@@ -2,7 +2,7 @@ let urll = "../jsonFile/rank.json";
 let requst = new XMLHttpRequest();
 requst.open("GET", urll); //resquest local data
 requst.responseType = "json";
-requst.send(null);
+requst.send();
 requst.onload = function () {
 	let datarespose = requst.response;
 

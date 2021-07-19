@@ -32,7 +32,7 @@ let url = "../jsonFile/data.json";
 let xhr = new XMLHttpRequest();
 xhr.open("GET", url); // request local data
 xhr.responseType = "json";
-xhr.send(null);
+xhr.send();
 xhr.onload = function () {
 	let data = xhr.response;
 	for (let i = 0; i < data.length; i++) {
