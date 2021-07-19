@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYP <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,29 +15,29 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
+    </head>
 
-<body>
-    <!-- Use any element to open the sidenav -->
-    <div id="rank">
-        <!-- <h3>臺北市10大多事故路口</h1> -->
-        <div data-role="page">
-            <div data-role="header">
-                <h1>事故路口</h1>
+    <body>
+        <!-- Use any element to open the sidenav -->
+        <div id="rank">
+            <!-- <h3>臺北市10大多事故路口</h1> -->
+            <div data-role="page">
+                <div data-role="header">
+                    <h1>事故路口</h1>
+                </div>
+                <div data-role="content">
+                    <ul data-role="listview" id='listadd'>
+                        <li id="li1" data-role="list-divider">前十大排名</li>
+                    </ul>
+                </div>
             </div>
-            <div data-role="content">
-                <ul data-role="listview" id='listadd'>
-                    <li id="li1" data-role="list-divider">前十大排名</li>
-                </ul>
-            </div>
+
         </div>
+        <div id="map"></div>
+        <script src="js/road.js"></script>
+        <script src="js/accident.js"></script>
+        <!-- <script src="road.js"></script> -->
 
-    </div>
-    <div id="map"></div>
-    <script src="road.js"></script>
-    <script src="accident.js"></script>
-    <!-- <script src="road.js"></script> -->
+    </body>
 
-</body>
-
-</html>
+    </html>
