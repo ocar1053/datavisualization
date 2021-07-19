@@ -53,7 +53,7 @@
 
 ## 功能展示
 
-![Product Name Screen Shot][search-screenshot]
+![Product Name Screen Shot][searchs-screenshot]
 
 提供搜索功能快速尋找指定路段
 
