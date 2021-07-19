@@ -29,6 +29,7 @@
     </li>
     </li>
     <li>功能展示</a></li>
+    <li>所需套件下載</a></li>
     <li>使用技術</a></li>
     <li>聯絡資料</a></li>
   </ol>
@@ -59,6 +60,12 @@
 ![Product Name Screen Shot][resource-screenshot]
 
 由於交通意外標示過多，為減少載入圖片之時間與資源，在案例過多或是地圖縮放過大時，會如上圖先將標示聚集在一點並統計數量。
+
+## 所需套件下載
+
+-   [leafletjs](https://leafletjs.com/)
+-   [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster)
+-   [leaflet-control-geocoder](https://github.com/perliedman/leaflet-control-geocoder)
 
 ## 使用技術
 
