@@ -1,47 +1,46 @@
-<!DOCTYP <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/all.min.css" rel="stylesheet">
     <!--load all styles -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
 
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    </head>
-
-    <body>
-        <!-- Use any element to open the sidenav -->
-        <div id="rank">
-            <!-- <h3>臺北市10大多事故路口</h1> -->
-            <div data-role="page">
-                <div data-role="header">
-                    <h1>事故路口</h1>
-                </div>
-                <div data-role="content">
-                    <ul data-role="listview" id='listadd'>
-                        <li id="li1" data-role="list-divider">前十大排名</li>
-                    </ul>
-                </div>
-            </div>
-
+<body>
+    <div id="rank">
+        <!-- <h3>臺北市10大多事故路口</h1> -->
+        <div class="list-group">
+            <button style="
+            text-align: center;" type="button"
+                class="list-group-item list-group-item-action active list-group-item-secondary"" aria-current=" true">
+                臺北市10大多事故路口
+            </button>
         </div>
-        <div id="map"></div>
+    </div>
+    </div>
+    <div id="map"></div>
+    <script src="accident.js"></script>
+    <script src="road.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
 
-        <script src="accident.js"></script>
-        <script src="road.js"></script>
-        <!-- <script src="road.js"></script> -->
-
-    </body>
-
-    </html>
+</html>
