@@ -12,24 +12,12 @@
 	position: absolute;
 }
 
-#li1 {
-	text-align: center;
-}
 body {
 	margin: 0;
 	padding: 0;
 }
-.btn {
-	background-color: transparent;
-	border: transparent;
-	float: right;
-}
-
-.btn:hover {
-	background-color: #555555;
-	color: white;
-}
-img {
-	max-width: 15px;
-	max-width: 13px;
+.list-group {
+	max-height: 100vh;
+	margin-bottom: 10px;
+	overflow-y: auto;
 }
