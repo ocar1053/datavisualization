@@ -45,7 +45,7 @@ xhr.onload = function () {
 					"<h1> 交通事故類別:" +
 					data[i].classs +
 					"</h1>" +
-					"<h1>地點:" +
+					"<h1> 地點:" +
 					data[i].site +
 					"</h1>"
 			)
